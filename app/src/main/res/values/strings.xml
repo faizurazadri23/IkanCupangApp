@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">IkanCupangApp</string>
+    <string name="cari_jenis_ikan">Cari Jenis Ikan</string>
+    <string name="home">Beranda</string>
+    <string name="not_found">Data Tidak Ditemukan</string>
+    <string name="ikan_cupang">Ikan Cupang</string>
+    <string name="jenis_ikan">Jenis Ikan</string>
+    <string name="harga">Harga</string>
+    <string name="penjual">Penjual</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="gambar_ikan_cupang">Gambar Ikan Cupang</string>
+    <string name="submit">SUBMIT</string>
+    <string name="validation_error">Wajib Diisi</string>
+    <string name="failed_permintaan">Permintaan Gagal</string>
+    <string name="ubah_data">Ubah Data</string>
+    <string name="hapus">HAPUS</string>
+    <string name="deleted">Sedang Menghapus Data</string>
+    <string name="please_Wait">Mohon Menunggu</string>
+</resources>

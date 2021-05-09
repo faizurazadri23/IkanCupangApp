@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/size_2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        style="@style/size_3">
+        
+        <RelativeLayout
+            style="@style/size_3">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_fish"
+                android:src="@drawable/icon_image"
+                android:layout_marginStart="2dp"
+                android:layout_centerVertical="true"
+                style="@style/size_image"/>
+            
+            <TextView
+                android:id="@+id/jenis_fish"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_toEndOf="@+id/img_fish"
+                android:layout_marginStart="10dp"
+                style="@style/size_2"/>
+
+            <TextView
+                android:id="@+id/price_fish"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/img_fish"
+                android:layout_below="@+id/jenis_fish"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                style="@style/size_2"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

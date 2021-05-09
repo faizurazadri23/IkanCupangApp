@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/size_1"
+    tools:context=".ui.main.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_fish"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_fish"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/list_fish"
+        style="@style/size_1"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fish"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        style="@style/size_2"/>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fish.DetailFishActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_fish"
+        android:layout_width="512px"
+        android:layout_height="512px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_detail"
+        style="@style/size_3"
+        android:layout_below="@+id/image_fish"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout style="@style/size_3">
+
+            <TextView
+                style="@style/size_2"
+                android:textStyle="bold"
+                android:text="@string/penjual"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/seller_fish"
+                style="@style/size_2"
+                android:text=""
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/size_2"
+                android:layout_below="@+id/seller_fish"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="@string/jenis_ikan"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/size_2"
+                android:text=""
+                android:id="@+id/jenis_fish"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/seller_fish"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/size_2"
+                android:layout_below="@+id/jenis_fish"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:text="@string/harga"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/size_2"
+                android:text=""
+                android:id="@+id/price_fish"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/jenis_fish"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/size_2"
+                android:layout_below="@+id/price_fish"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="@string/tanggal"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/size_2"
+                android:text=""
+                android:id="@+id/purchaeDate"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/price_fish"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img_edit"
+        android:layout_below="@+id/layout_detail"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_edit"
+        android:layout_marginTop="10dp"
+        android:layout_width="50px"
+        android:layout_height="50px"/>
+
+    <TextView
+        android:id="@+id/edit_fish"
+        android:textSize="16sp"
+        android:layout_below="@+id/layout_detail"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img_edit"
+        android:textStyle="bold"
+        android:text="@string/ubah_data"
+        android:layout_marginLeft="5dp"
+        style="@style/size_2"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_below="@+id/img_edit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button"
+        android:text="@string/hapus"
+        style="@style/size_3"/>
+
+</RelativeLayout>
